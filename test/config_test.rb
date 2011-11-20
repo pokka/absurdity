@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class AbsurdityTest < MiniTest::Unit::TestCase
+class ConfigTest < MiniTest::Unit::TestCase
 
   def test_redis_setter_and_getter
     a_redis = MockRedis.new
