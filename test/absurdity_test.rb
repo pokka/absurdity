@@ -2,12 +2,6 @@ require 'test_helper'
 
 class AbsurdityTest < MiniTest::Unit::TestCase
 
-  def test_redis_setter_and_getter
-    a_redis = MockRedis.new
-    Absurdity.redis = a_redis
-    assert_equal a_redis, Absurdity.redis
-  end
-
   def test_track_missing_experiment
     Absurdity.redis = MockRedis.new
 
