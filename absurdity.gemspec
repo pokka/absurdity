@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = "opensource@xing.com"
   s.homepage    = "http://www.github.com/xing/absurdity/"
   s.summary     = %q{Absurdly simple a/b testing}
-  s.description = %q{See summary}
+  s.description = %q{Absurdly simple a/b testing}
 
   s.rubyforge_project = "absurdity"
 
