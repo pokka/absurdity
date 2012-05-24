@@ -23,4 +23,7 @@ module Absurdity
     Experiment.find(experiment_slug).variant_for(identity_id)
   end
 
+  def self.add_experiment(slug, metrics_list, variants_list)
+    Experiment.create(slug, metrics_list, variants_list)
+  end
 end
