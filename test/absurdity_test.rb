@@ -86,5 +86,15 @@ class AbsurdityTest < MiniTest::Unit::TestCase
     assert_equal :with_photos, Absurdity.variant(:shared_contacts_link, 1)
   end
 
+  def test_adding_an_experiment
+    Absurdity.redis = MockRedis.new
+
+    Absurdity.add_experiment(:sign_up_link, [:signed_up], [:normal, :bold])
+    experiment = Absurdity::Experiment.find(:sign_up_link)
+
+    assert_equal :sign_up_link,    experiment.slug
+    assert_equal [:signed_up],     experiment.metrics_list
+    assert_equal [:normal, :bold], experiment.variants_list
+  end
 end
 

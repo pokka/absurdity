@@ -6,6 +6,8 @@ module Absurdity
     end
 
     def self.load_experiments
+      return unless File.exists?("absurdity/experiments.yml")
+
       experiments_to_create = YAML.load_file("absurdity/experiments.yml")[:experiments]
       experiments_to_create.each do |experiment_slug, values|
         metrics_list = values[:metrics]
