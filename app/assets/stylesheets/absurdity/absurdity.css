@@ -1,0 +1,96 @@
+body {
+  background-color: #fff;
+  font: 12px Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 12px 12px;
+  width: 1000px;
+}
+
+h1, h2, h3 {
+  color: #bbb;
+  display: inline;
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h1 {
+  color: #333;
+  font-weight: bold;
+  padding-right: 12px;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.8em;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.reports li {
+  color: #aaa;
+  background-color: #333;
+  border-radius: 10px;
+  -moz-box-shadow: 0 5px 5px #999;
+  -webkit-box-shadow: 0 5px 5px #999;
+  box-shadow: 0 5px 5px #999;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 10px;
+  margin: 10px 10px 10px 0;
+  position: relative;
+  height: 80px;
+  width: 170px;
+}
+
+.reports li span {
+  font-weight: normal;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.reports li a, .reports li a:visited {
+  color: #f8f8f8;
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  height: 80px;
+  width: 170px;
+}
+
+li.variant {
+  border-left: 3px solid #eee;
+  color: #333;
+  display: inline-block;
+  margin-top: 12px;
+  padding-left: 12px;
+  width: 25%;
+}
+
+li.variant:first-child {
+  border-left: none;
+  padding: 0 12px 0 0;
+}
+
+.metric {
+  font-weight: bold;
+}
+
